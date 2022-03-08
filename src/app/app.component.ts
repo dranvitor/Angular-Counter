@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  title = 'contador';
+  contador = 0;
+
+ aumentar() {
+   this.contador = this.contador + 1;
+ }
+diminuir() {
+  this.contador = this.contador - 1;
+}
+
 }
